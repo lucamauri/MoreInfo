@@ -1,0 +1,63 @@
+{
+  "name": "MoreInfo",
+  "author": "[https://www.lucamauri.com/ Luca Mauri]",
+  "url": "https://github.com/lucamauri/MoreInfo",
+  "description": "moreinfo-desc",
+  "version": "1.0",
+  "license-name": "GPL-2.0-or-later",
+  "type": "other",
+  "manifest_version": 1,
+  "AutoloadClasses": {
+    "MISpecialFullP": "includes/MISpecialFullP.php",
+    "MIServerIP": "includes/MIServerIP.php",
+    "MIHooks": "MoreInfoHooks.php"
+  },
+  "config": {
+    "MIIgnoreMinor": {
+      "description": "Ignore chages if they are Minor",
+      "value": true
+    },
+    "MINameSpace": {
+      "description": "Label of the namespace to check",
+      "descriptionmsg": "MI-config-namespace",
+      "value": null
+    },
+    "MIOwner": {
+      "description": "Name of the owner of the repository",
+      "value": null
+    },
+    "MIRepo": {
+      "description": "Name of the repository where to save the files",
+      "value": null
+    },
+    "MIKeyword": {
+      "description": "Optional keyword to include selected page only in the transport",
+      "value": null
+    },
+    "MIAddKeyword": {
+      "description": "Add keyword to file name",
+      "value": null
+    },
+    "MIAuthToken": {
+      "description": "Personal GitHub token",
+      "value": null
+    }
+  },
+  "ConfigRegistry": {
+    "MoreInfo": "GlobalVarConfig::newInstance"
+  },
+  "ExtensionMessagesFiles": {
+    "MoreInfoMagic": "MoreInfo.i18n.magic.php"
+  },
+  "Hooks": {
+    "MagicWordwgVariableIDs": "MIHooks::wfMIServerIPVarIds",
+    "ParserGetVariableValueSwitch": "MIHooks::wfMIServerIPSwitch"
+  },
+  "SpecialPages": {
+    "MoreInfoFullP": "MISpecialFullP",
+    "MoreInfoserverIP": "MIServerIP"
+  },
+  "MessagesDirs": {
+    "MoreInfo": ["i18n"]
+  }
+}

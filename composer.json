@@ -1,0 +1,30 @@
+{
+  "name": "lucamauri/more-info",
+  "description": "Provides a collection of additional information on a MediaWiki installation",
+  "type": "mediawiki-extension",
+  "keywords": [
+    "php",
+    "lua",
+    "github"
+  ],
+  "homepage": "https://github.com/lucamauri/MoreInfo",
+  "authors": [
+    {
+      "name": "Luca Mauri",
+      "homepage": "https://www.lucamauri.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "support": {
+    "issues": "https://github.com/lucamauri/MoreInfo/issues",
+    "source": "https://github.com/lucamauri/MoreInfo",
+    "docs": "https://github.com/lucamauri/MoreInfo",
+    "wiki": "https://github.com/lucamauri/MoreInfo/wiki"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "6.5.*",
+    "knplabs/github-api": "2.*",
+    "php-http/guzzle6-adapter": "^1.1"
+  }
+}
