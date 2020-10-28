@@ -1,16 +1,17 @@
 [![StyleCI](https://github.styleci.io/repos/238323866/shield?branch=master)](https://github.styleci.io/repos/238323866)
-[![Latest Stable Version](https://poser.pugx.org/lucamauri/page-to-github/v/stable)](https://packagist.org/packages/lucamauri/page-to-github)
-[![Total Downloads](https://poser.pugx.org/lucamauri/page-to-github/downloads)](https://packagist.org/packages/lucamauri/page-to-github)
-[![Latest Unstable Version](https://poser.pugx.org/lucamauri/page-to-github/v/unstable)](https://packagist.org/packages/lucamauri/page-to-github)
-[![License](https://poser.pugx.org/lucamauri/page-to-github/license)](https://packagist.org/packages/lucamauri/page-to-github)
-[![Monthly Downloads](https://poser.pugx.org/lucamauri/page-to-github/d/monthly)](https://packagist.org/packages/lucamauri/page-to-github)
-[![Daily Downloads](https://poser.pugx.org/lucamauri/page-to-github/d/daily)](https://packagist.org/packages/lucamauri/page-to-github)
-[![composer.lock](https://poser.pugx.org/lucamauri/page-to-github/composerlock)](https://packagist.org/packages/lucamauri/page-to-github)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucamauri/PageToGitHub.svg)](http://isitmaintained.com/project/lucamauri/PageToGitHub "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/lucamauri/PageToGitHub.svg)](http://isitmaintained.com/project/lucamauri/PageToGitHub "Percentage of issues still open")
+[![Latest Stable Version](https://poser.pugx.org/lucamauri/MoreInfo/v/stable)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![Total Downloads](https://poser.pugx.org/lucamauri/MoreInfo/downloads)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![Latest Unstable Version](https://poser.pugx.org/lucamauri/MoreInfo/v/unstable)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![License](https://poser.pugx.org/lucamauri/MoreInfo/license)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![Monthly Downloads](https://poser.pugx.org/lucamauri/MoreInfo/d/monthly)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![Daily Downloads](https://poser.pugx.org/lucamauri/MoreInfo/d/daily)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![composer.lock](https://poser.pugx.org/lucamauri/MoreInfo/composerlock)](https://packagist.org/packages/lucamauri/MoreInfo)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/lucamauri/MoreInfo.svg)](http://isitmaintained.com/project/lucamauri/MoreInfo "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/lucamauri/MoreInfo.svg)](http://isitmaintained.com/project/lucamauri/MoreInfo "Percentage of issues still open")
 
-# PageToGitHub
-
+# MoreInfo
+MoreInfo is an experimental extension aimed to provide technical ans statistical information about a MediaWiki instace both trought the use of magic words and dedicated special page.
+<!--
 <img align="left" width="64px" src="https://www.lucamauri.com/content/images/logo/PageToGitHub.png">PageToGitHub, P2G in short, is a MediaWiki extension to automatically transfer code from a MediaWiki wiki to GitHub.
 It was originally conceived and written by [Luca Mauri](https://github.com/lucamauri) for use in [Wikitrek](https://github.com/WikiTrek): it is released as open source here in case it can be useful to anybody else.
 
@@ -106,7 +107,7 @@ $wgDebugLogGroups['PageToGitHub'] = "/var/log/mediawiki/PageToGitHub-{$wgDBname}
 ```
 
 ## Documentation
-
+-->
 ## License
 
 [GNU General Public License, version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
