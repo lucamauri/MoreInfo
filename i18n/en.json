@@ -3,16 +3,5 @@
     "authors": ["Luca Mauri"]
   },
   "moreinfo": "More Info",
-  "moreinfo-desc": "Provides a collection of additional information on a MediaWiki installation",
-  "specialpages-group-moreinfo": "''More Info'' Extension",
-  "moreinfofullp": "List of properties with details",
-  "moreinfoserverip": "Information on host and IP addresses",
-
-  "auto-upload": "Auto upload by PageToGitHub on",
-  "auto-commit": "Auto commit by PageToGitHub",
-  "code-from-page": "This code from page",
-  "p2g-config-namespace": "Label of the namespace to check",
-  "p2g-specialpage-text": "This page shows details on ''PageToGitHub'' configuration",
-  "p2g-specialpage-variables-text": "This section shows the values of ''PageToGitHub'' configuration variables",
-  "p2g-specialpage-config-title": "==Configuration=="
+  "moreinfo-desc": "Provides additional technical information through magic words like {{SERVERIP}}"
 }
