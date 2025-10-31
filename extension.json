@@ -12,6 +12,7 @@
   "MessagesDirs": {
     "MoreInfo": ["i18n"]
   },
+  "MagicWordsFiles": ["i18n/en.json"],
   "AutoloadClasses": {
     "MoreInfo\\Hooks": "includes/Hooks.php"
   },
