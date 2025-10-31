@@ -4,9 +4,5 @@
   },
   "moreinfo": "More Info",
   "moreinfo-desc": "Provides additional technical information through magic words like {{SERVERIP}}",
-  "magicwords": {
-    "serverip": {
-      "0": "SERVERIP"
-    }
-  }
+  "serverip": [0, "SERVERIP"]
 }
