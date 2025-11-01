@@ -67,7 +67,7 @@ class Hooks {
 	}
 
 	/**
-	 * Fallback method to get server IP
+	 * Fallback method to get server IP via external service
 	 *
 	 * @return string IP address or error message
 	 */
@@ -75,18 +75,55 @@ class Hooks {
 		// Check if we have a cached value
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$cacheKey = $cache->makeKey( 'moreinfo', 'serverip' );
-		
+
 		$cachedIP = $cache->get( $cacheKey );
 		if ( $cachedIP !== false ) {
 			return $cachedIP;
 		}
 
-		// If no IP found, return a message
-		$ip = 'Unable to determine server IP';
-		
+		// Try to get IP from external service with security measures
+		$ip = self::fetchExternalIP();
+
 		// Cache for 24 hours
 		$cache->set( $cacheKey, $ip, 86400 );
-		
+
 		return $ip;
+	}
+
+	/**
+	 * Fetch server IP from external service with security measures
+	 *
+	 * @return string IP address or error message
+	 */
+	private static function fetchExternalIP() {
+		$services = [
+			'https://api.ipify.org',
+			'https://ipv4.icanhazip.com',
+			'https://checkip.amazonaws.com'
+		];
+
+		foreach ( $services as $service ) {
+			$context = stream_context_create([
+				'http' => [
+					'timeout' => 5, // 5 second timeout
+					'method' => 'GET',
+					'header' => 'User-Agent: MoreInfo-MediaWiki-Extension/1.0'
+				],
+				'ssl' => [
+					'verify_peer' => true,
+					'verify_peer_name' => true
+				]
+			]);
+
+			$result = @file_get_contents( $service, false, $context );
+			if ( $result !== false ) {
+				$ip = trim( $result );
+				if ( filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6 ) ) {
+					return $ip;
+				}
+			}
+		}
+
+		return 'Unable to determine server IP';
 	}
 }

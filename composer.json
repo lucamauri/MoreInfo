@@ -22,9 +22,5 @@
     "docs": "https://github.com/lucamauri/MoreInfo",
     "wiki": "https://github.com/lucamauri/MoreInfo/wiki"
   },
-  "require": {
-    "guzzlehttp/guzzle": "6.5.*",
-    "knplabs/github-api": "2.*",
-    "php-http/guzzle6-adapter": "^1.1"
-  }
+  "require": {}
 }

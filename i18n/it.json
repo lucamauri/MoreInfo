@@ -3,5 +3,6 @@
     "authors": ["Luca Mauri"]
   },
   "moreinfo": "More Info",
-  "moreinfo-desc": "Fornisce informazioni tecniche aggiuntive attraverso magic words come {{SERVERIP}}"
+  "moreinfo-desc": "Fornisce informazioni tecniche aggiuntive attraverso magic words come {{SERVERIP}}",
+  "serverip": [0, "SERVERIP"]
 }
